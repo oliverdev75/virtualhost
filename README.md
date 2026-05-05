@@ -3,7 +3,7 @@
 Install dependencies.
 ```bash
 sudo apt-get update
-sudo apt-get install -y gcc make perl libxml2 xsltproc
+sudo apt-get install -y xz-utils gcc make perl libxml2 xsltproc
 ```
 
 Download library from libvirt official repo.
