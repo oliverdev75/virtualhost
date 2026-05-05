@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Install Lbvirt PHP library</title>
+    </head>
+    <body>
+        <div class="container">
+            
+            <h1>Install Libvirt library for PHP </h1>
+            <h2>Install dependencies.</h2>
+            <code>
+                <span>
+                    sudo apt-get update
+                    <br>
+                    sudo apt-get installa -y xz-utils gcc make perl libxml2 xsltproc
+                </span>
+            </code>
+    
+            <p>Download library from libvirt official repo.</p>
+    
+            <code>
+                <span>
+                    wget https://download.libvirt.org/php/libvirt-php-0.5.8.tar.xz
+                </span>
+            </code>
+    
+            <p>Uncompress and get in the library directory.</p>
+            <code>
+                <span>
+                    xz -d libvirt-php-0.5.8.tar.xz
+                    <br>
+                    tar xf libvirt-php-0.5.8.tar
+                </span>
+            </code>
+    
+            <p>Run <span class="command">configure</span> script to check all required dependencies.</p>
+            <code>
+                <span>
+                    ./configure
+                </span>
+            </code>
+            
+            <p>Compile and install the library.</p>
+            <code>
+                <span>
+                    make
+                    sudo make install
+                </span>
+            </code>
+    
+            <p>Run the following command to check if it was installed successfuly.</p>
+            <code>
+                <span>
+                    php -i
+                </span>
+            </code>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
